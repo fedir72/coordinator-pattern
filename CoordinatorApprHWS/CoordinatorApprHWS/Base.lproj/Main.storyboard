@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CoordinatorApprHWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW4-Bh-emo">
+                                <rect key="frame" x="92.5" y="425.5" width="229" height="55"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Buy">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapBuyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0d-9L-S5s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voo-xK-ovR">
+                                <rect key="frame" x="92.5" y="488" width="229" height="55"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CreateAccount">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapcreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bR-k1-PRK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Voo-xK-ovR" firstAttribute="top" secondItem="XW4-Bh-emo" secondAttribute="bottom" constant="7.5" id="BLu-SA-9Pd"/>
+                            <constraint firstItem="Voo-xK-ovR" firstAttribute="height" secondItem="XW4-Bh-emo" secondAttribute="height" id="EQo-lv-uTw"/>
+                            <constraint firstItem="XW4-Bh-emo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WNA-9C-k3j"/>
+                            <constraint firstItem="Voo-xK-ovR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZxZ-oP-Bge"/>
+                            <constraint firstItem="XW4-Bh-emo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="blJ-fp-dbS"/>
+                            <constraint firstItem="XW4-Bh-emo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="hgT-hR-FyQ"/>
+                            <constraint firstItem="Voo-xK-ovR" firstAttribute="width" secondItem="XW4-Bh-emo" secondAttribute="width" id="kKj-pa-VaV"/>
+                            <constraint firstItem="XW4-Bh-emo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.55314" id="kx8-kC-gcA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="82"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="Mre-hQ-SAP">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewController" id="Ur9-Xc-WpQ" customClass="BuyViewController" customModule="CoordinatorApprHWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dhs-Rv-fAt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh0-11-zj1">
+                                <rect key="frame" x="92.5" y="425.5" width="229" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="31"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapRegisterButton:" destination="Ur9-Xc-WpQ" eventType="touchUpInside" id="QFW-G5-3PG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fK6-AD-qUg"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Vh0-11-zj1" firstAttribute="width" secondItem="dhs-Rv-fAt" secondAttribute="width" multiplier="0.55314" id="Fxz-N8-tSQ"/>
+                            <constraint firstItem="Vh0-11-zj1" firstAttribute="centerY" secondItem="fK6-AD-qUg" secondAttribute="centerY" id="JMQ-Qi-0K9"/>
+                            <constraint firstItem="Vh0-11-zj1" firstAttribute="height" secondItem="dhs-Rv-fAt" secondAttribute="height" multiplier="0.0613839" id="LVa-F5-oNS"/>
+                            <constraint firstItem="Vh0-11-zj1" firstAttribute="centerX" secondItem="fK6-AD-qUg" secondAttribute="centerX" id="hkV-Mt-Sc0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeO-z0-0pY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="82"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="4UQ-qR-yZ5">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" id="d8n-4u-rEV" customClass="CreateAccountViewController" customModule="CoordinatorApprHWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avC-5w-wTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8G-2x-Jh1">
+                                <rect key="frame" x="92.5" y="425.5" width="229" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="31"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapButton:" destination="d8n-4u-rEV" eventType="touchUpInside" id="EiA-Le-gxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JR8-gH-Mv6"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r8G-2x-Jh1" firstAttribute="centerX" secondItem="JR8-gH-Mv6" secondAttribute="centerX" id="47H-aX-3Y8"/>
+                            <constraint firstItem="r8G-2x-Jh1" firstAttribute="width" secondItem="avC-5w-wTA" secondAttribute="width" multiplier="0.55314" id="6Ow-Vh-KCM"/>
+                            <constraint firstItem="r8G-2x-Jh1" firstAttribute="centerY" secondItem="JR8-gH-Mv6" secondAttribute="centerY" id="747-wJ-ztb"/>
+                            <constraint firstItem="r8G-2x-Jh1" firstAttribute="height" secondItem="avC-5w-wTA" secondAttribute="height" multiplier="0.0613839" id="kYl-Jd-kwQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qN4-O5-pvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
